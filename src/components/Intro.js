@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
-import Me from '../assets/Images/me.png'
+import Me from '../assets/Images/me2.png'
 
 const Box = styled(motion.div)`
   position: absolute;
@@ -31,6 +31,9 @@ const Box = styled(motion.div)`
     background: none;
     border-top: 2px solid ${props => props.theme.body};
     border-bottom: 2px solid ${props => props.theme.text};
+    width: 60vw;
+    height: 30vh;
+    transform: translate(-50%, -65%);
   }
 `
 const SubBox = styled.div`
@@ -68,7 +71,7 @@ const Text = styled.div`
   justify-content: space-evenly;
 
   &>*:last-child {
-    color: ${props => `rgba(${props.theme.bodyRgba},0.6)` };
+    color: ${props => `rgba(${props.theme.bodyRgba},0.7)` };
     font-size: calc(0.5rem + 1.5vw);
     font-weight:300;
 

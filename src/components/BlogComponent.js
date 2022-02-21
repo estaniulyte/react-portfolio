@@ -7,7 +7,7 @@ import styled from 'styled-components'
 const Box = styled(motion(NavLink))`
   width: calc(10rem + 15vw);
   text-decoration: none;
-  height: 20rem;
+  height: 24.5rem;
   padding: 1rem;
   color: ${props => props.theme.text};
   border: 2px solid ${props => props.theme.text};
@@ -23,12 +23,16 @@ const Box = styled(motion(NavLink))`
     background-color: ${props => props.theme.text};
     transition: all 0.3s ease;
   }
+
+  @media (max-width: 900px) {
+    width: 90%;
+  }
 `
 
 const Image = styled.div`
   background-image: ${props => `url(${props.img})`};
   width: 100%;
-  height: 60%;
+  height: 90%;
   background-size: cover;
   border: 1px solid transparent;
   background-position: center center;
@@ -51,6 +55,7 @@ const Title = styled.h3`
 `
 const HashTags = styled.div`
   padding: 0.5rem 0;
+  overflow: hidden;
 `
 const Tag= styled.span`
   padding-right: 0.5rem;

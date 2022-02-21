@@ -21,6 +21,10 @@ const MainContainer = styled.div`
 
 const Container = styled.div`
   padding: 2rem;
+
+  @media (max-width: 900px) {
+    padding: 0;
+  }
 `
 
 const Contact = styled(NavLink)`
@@ -47,6 +51,8 @@ const BLOG = styled(NavLink)`
   @media only screen and (max-width: 600px) {
     color: ${props => props.theme.body};
     text-shadow: 2px 2px 4px #000;
+    top: 43%;
+    right: calc(1vw);
   }
 `
 const WORK = styled(NavLink)`
@@ -61,6 +67,7 @@ const WORK = styled(NavLink)`
   @media only screen and (max-width: 600px) {
     color: ${props => props.theme.body};
     text-shadow: 2px 2px 4px #000;
+    top: 40%;
   }
 
 `
@@ -73,6 +80,10 @@ const BottomBar = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+
+  @media only screen and (max-width: 600px) {
+    bottom: 9rem;
+  }
 `
 
 const ABOUT = styled(NavLink)`
@@ -145,7 +156,7 @@ const DarkDiv = styled.div`
     right: 0;
     bottom: 50%;
     width: ${props => props.click ? '100%' : '0%'};
-    height: ${props => props.click ? '50%' : '0%'};
+    height: ${props => props.click ? '40%' : '0%'};
   }
 `
 
@@ -222,7 +233,7 @@ const Main = () => {
               whileHover={{scale: 1.1}}
               whileTap={{scale: 0.9}}
             >
-              About.
+              About
             </motion.h2>
           </ABOUT>
           <SKILLS to="/skills">
@@ -238,7 +249,7 @@ const Main = () => {
               whileHover={{scale: 1.1}}
               whileTap={{scale: 0.9}}
             >
-              My Skills.
+              Contact
             </motion.h2>
           </SKILLS>
         </BottomBar>

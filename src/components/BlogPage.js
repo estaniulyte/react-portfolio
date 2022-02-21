@@ -35,6 +35,13 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
   grid-gap: calc(1rem + 2vw);
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
 `
 
 // Framer-motion config
@@ -69,7 +76,7 @@ const BlogPage = () => {
       <Container>
         <LogoComponent />
         <SocialIcons />
-        <AnchorComponent number={numbers}/>
+        {/* <AnchorComponent number={numbers}/> */}
         <Center>
           <Grid>
             {

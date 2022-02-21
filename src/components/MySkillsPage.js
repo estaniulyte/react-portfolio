@@ -83,30 +83,26 @@ const MySkillsPage = () => {
         <ParticleComponent theme='light' />
         <Main>
           <Title>
-            <Design width={40} height={40} /> Designer
+            <Design width={40} height={40} /> Software Test Engineer
           </Title>
           <Description>
-            I love to create design which speaks, Keep it clean, minimal and simple.
-          </Description>
-          <Description>
-            <strong>I like to Design</strong>
-            <ul>
-              <li>
-                Web Design
-              </li>
-              <li>
-                Mobile Apps
-              </li>
-            </ul>
+            Most of experience based on testing Unity Engine
           </Description>
           <Description>
             <strong>Tools</strong>
             <ul>
-                <li>
-                  Figma
-                </li>
-                
+              <li>
+                Unity Engine
+              </li>
+              <li>
+                Confluence
+              </li>
+              <li>
+                Jira
+              </li>
             </ul>
+          </Description>
+          <Description>
           </Description>
         </Main>
         <Main>
@@ -114,18 +110,18 @@ const MySkillsPage = () => {
             <Develope width={40} height={40} /> Frontend Developer
           </Title>
           <Description>
-            I value business or brand for which i'm creating, thus i enjoy bringing new ideas to life.
+            Learning Ract & Vue in leasure time
           </Description>
           <Description>
             <strong>Skills</strong>
             <p>
-              Html, Css, Js, React, Redux, Sass, Bootstrap, Tailwind, Firebase etc.
+              Html, Css, Js, React, Sass, Vue
             </p>
           </Description>
           <Description>
             <strong>Tools</strong>
             <p>
-              VScode, Github, Codepen etc.
+              VScode, Github etc.
             </p>
           </Description>
         </Main>
