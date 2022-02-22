@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import { Facebook, Github, YouTube } from '../components/AllSvgs'
+import { Github } from '../components/AllSvgs'
 import { ReactComponent as LindedIcon } from '../assets/svg/linked-in.svg'
 import { DarkTheme } from '../components/Themes'
 
