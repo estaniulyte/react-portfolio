@@ -21,9 +21,9 @@ const Main = styled.div`
   border: 2px solid ${props => props.theme.text};
   color: ${props => props.theme.text};
   background-color: ${props => props.theme.body};
-  padding: 2rem;
-  width: 35vw;
-  height: 50vh;
+  padding: 4rem;
+  width: 30vw;
+  height: 40vh;
   z-index: 3;
   line-height: 1.5;
   cursor: pointer;
@@ -39,7 +39,8 @@ const Main = styled.div`
 
   @media (max-width: 900px) {
     width: 70vw;
-    height: 40vh;
+    height: 35vh;
+    padding: 2rem;
   }
 `
 
@@ -80,7 +81,9 @@ const Description = styled.div`
       color:${props => props.theme.body};
       
       &:hover{
-        color: #A3B2DB;
+        color: ${props => props.theme.text};
+        background-color: ${props => props.theme.body};
+        padding: 3px;
         cursor: pointer;
       }
     }
@@ -110,13 +113,10 @@ const MySkillsPage = () => {
         <Main>
           <Title>
             {/* <Design width={40} height={40} /> */}
-            Contact
+            Say Hello
           </Title>
           <Description>
-            If you have an offer or opportunity e-mail me at <NavLink target="_blank" to={{pathname:"mailto:e.staniulyte98@gmail.com"}}>e.staniulyte@gmail.com</NavLink>
-          </Description>
-          <Description>
-            k
+            If you have an offer or opportunity e-mail me at <NavLink target="_blank" to={{pathname:"mailto:e.staniulyte98@gmail.com"}}>e.staniulyte98@gmail.com</NavLink>
           </Description>
           <Description>
             <a href="https://drive.google.com/uc?export=download&id=1REsCyViKq7lGWxbS2qE5iIvx2fkuSZ1D">Download CV</a>
