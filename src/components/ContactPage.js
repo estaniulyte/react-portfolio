@@ -1,11 +1,11 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { lightTheme } from './Themes';
-import { Design, Develope} from './AllSvgs';
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
+import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Box = styled.div`
   background-color: ${props => props.theme.body};
@@ -22,8 +22,8 @@ const Main = styled.div`
   color: ${props => props.theme.text};
   background-color: ${props => props.theme.body};
   padding: 2rem;
-  width: 30vw;
-  height: 60vh;
+  width: 35vw;
+  height: 50vh;
   z-index: 3;
   line-height: 1.5;
   cursor: pointer;
@@ -36,6 +36,11 @@ const Main = styled.div`
     color: ${props => props.theme.body};
     background-color: ${props => props.theme.text};
   }
+
+  @media (max-width: 900px) {
+    width: 70vw;
+    height: 40vh;
+  }
 `
 
 const Title = styled.h2`
@@ -43,6 +48,10 @@ const Title = styled.h2`
   justify-content: center;
   align-items: center;
   font-size: calc(1em + 1vw);
+
+  @media (max-width: 900px) {
+    font-size: calc(1.5em + 1vw);
+  }
 
   ${Main}:hover &{
     &>*{
@@ -58,10 +67,23 @@ const Title = styled.h2`
 const Description = styled.div`
   color: ${props => props.theme.text};
   font-size: calc(0.6em + 1vw);
-  padding: 0.5rem 0;
+  padding: 1rem;
+
+  @media (max-width: 900px) {
+    font-size: calc(0.9em + 1vw);
+  }
 
   ${Main}:hover &{
     color:${props => props.theme.body};
+
+    a {
+      color:${props => props.theme.body};
+      
+      &:hover{
+        color: #A3B2DB;
+        cursor: pointer;
+      }
+    }
   }
 
   strong {
@@ -71,6 +93,10 @@ const Description = styled.div`
 
   ul,p {
     margin-left: 2rem;
+  }
+
+  a {
+    color: ${props => props.theme.text};
   }
 `
 
@@ -83,29 +109,20 @@ const MySkillsPage = () => {
         <ParticleComponent theme='light' />
         <Main>
           <Title>
-            <Design width={40} height={40} /> Software Test Engineer
+            {/* <Design width={40} height={40} /> */}
+            Contact
           </Title>
           <Description>
-            Most of experience based on testing Unity Engine
+            If you have an offer or opportunity e-mail me at <NavLink target="_blank" to={{pathname:"mailto:e.staniulyte98@gmail.com"}}>e.staniulyte@gmail.com</NavLink>
           </Description>
           <Description>
-            <strong>Tools</strong>
-            <ul>
-              <li>
-                Unity Engine
-              </li>
-              <li>
-                Confluence
-              </li>
-              <li>
-                Jira
-              </li>
-            </ul>
+            k
           </Description>
           <Description>
+            <a href="https://drive.google.com/uc?export=download&id=1REsCyViKq7lGWxbS2qE5iIvx2fkuSZ1D">Download CV</a>
           </Description>
         </Main>
-        <Main>
+        {/* <Main>
           <Title>
             <Develope width={40} height={40} /> Frontend Developer
           </Title>
@@ -124,8 +141,8 @@ const MySkillsPage = () => {
               VScode, Github etc.
             </p>
           </Description>
-        </Main>
-        <BigTitle text="SKILLS" top="80%" right="30%" />
+        </Main> */}
+        <BigTitle text="CONTACT" top="80%" right="30%" />
       </Box>
     </ThemeProvider>    
   )

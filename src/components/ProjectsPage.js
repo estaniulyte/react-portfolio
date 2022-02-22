@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import img from "../assets/Images/sigmund-4UGmm3WRUoQ-unsplash.jpg"
 import LogoComponent from '../subComponents/LogoComponent'
 import SocialIcons  from '../subComponents/SocialIcons'
 import { Blogs } from '../data/BlogData';
 import BlogComponent from './BlogComponent'
-import AnchorComponent from '../subComponents/Anchor'
+// import AnchorComponent from '../subComponents/Anchor'
 import BigTitle from "../subComponents/BigTitlte"
 import { motion } from 'framer-motion'
 
@@ -57,12 +57,12 @@ const container = {
 }
 
 const BlogPage = () => {
-  const [numbers, setNumbers] = useState(0);
+  // const [numbers, setNumbers] = useState(0);
 
-  useEffect(() => {
-    let num = (window.innerHeight - 70)/30;
-    setNumbers(parseInt(num));
-  }, [])
+  // useEffect(() => {
+  //   let num = (window.innerHeight - 70)/30;
+  //   setNumbers(parseInt(num));
+  // }, [])
 
   return (
     <MainContainer
