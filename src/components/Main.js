@@ -106,39 +106,39 @@ const SKILLS = styled(NavLink)`
 
 `
 
-const rotate = keyframes`
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`
+// const rotate = keyframes`
+//   from {
+//     transform: rotate(0);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// `
 
-const Center = styled.button`
-  position: absolute;
-  top: ${props => props.click ? '85%' :'50%'  };
-  left: ${props => props.click ? '92%' :'50%'  };
-  transform: translate(-50%,-50%);
-  border: none;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 1s ease;
+// const Center = styled.button`
+//   position: absolute;
+//   top: ${props => props.click ? '85%' :'50%'  };
+//   left: ${props => props.click ? '92%' :'50%'  };
+//   transform: translate(-50%,-50%);
+//   border: none;
+//   outline: none;
+//   background-color: transparent;
+//   cursor: pointer;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   transition: all 1s ease;
 
-  &>:first-child{
-    animation: ${rotate} infinite 1.5s linear;
-  }
+//   &>:first-child{
+//     animation: ${rotate} infinite 1.5s linear;
+//   }
 
-  &>:last-child{
-    display: ${props => props.click ? 'none' :'inline-block'  };
-    padding-top: 1rem;
-  }
-`
+//   &>:last-child{
+//     display: ${props => props.click ? 'none' :'inline-block'  };
+//     padding-top: 1rem;
+//   }
+// `
 
 const DarkDiv = styled.div`
   position: absolute;
@@ -171,7 +171,7 @@ const Main = () => {
         <Container>
           <LogoComponent theme={click ? 'dark' :'light'}/>
           <SocialIcons theme={click ? 'dark' :'light'} />
-          <Contact target="_blank" to={{pathname:"mailto:e.staniulyte98@gmail.com"}}>
+          {/* <Contact target="_blank" to={{pathname:"mailto:e.staniulyte98@gmail.com"}}>
             <motion.h2
               initial={{
                 y:-200,
@@ -186,8 +186,8 @@ const Main = () => {
             >
               Say hi..
             </motion.h2>
-          </Contact>
-          <BLOG to="/blog">
+          </Contact> */}
+          <BLOG to="/projects">
             <motion.h2
             initial={{
                 y:-200,
@@ -236,7 +236,7 @@ const Main = () => {
               About
             </motion.h2>
           </ABOUT>
-          <SKILLS to="/skills">
+          <SKILLS to="/contact">
             <motion.h2
               initial={{
                 y:200,
