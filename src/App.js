@@ -18,6 +18,7 @@ function App() {
     <GlobalStyle />
     <ThemeProvider theme={lightTheme}>
       <AnimatePresence exitBeforeEnter>
+        <ScrollToTop />
         <Switch  location={location} key={location.pathname}>
           <Route exact path="/" component={Main}/>
           <Route exact path="/about" component={AboutPage}/>
