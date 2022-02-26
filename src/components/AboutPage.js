@@ -10,7 +10,7 @@ import astronaut from '../assets/Images/dev-female.png'
 const Box = styled.div`
   background-color: ${props => props.theme.body};
   width: 100vw;
-  height:100vh;
+  height: 100vh;
   position: relative;
   overflow: hidden;
 `
@@ -77,78 +77,154 @@ const Main =  styled.div`
 
   .color1 {
     background-color: #a32929;
+
+    &:hover {
+      transform: rotate(5deg);
+    }
   }
 
   .color2 {
     background-color: #a34a29;
+
+    &:hover {
+      transform: rotate(-8deg);
+    }
   }
 
   .color3 {
     background-color: #a36a29;
+
+    &:hover {
+      transform: rotate(-3deg);
+    }
   }
 
   .color4 {
     background-color: #a38a29;
+
+    &:hover {
+      transform: rotate(9deg);
+    }
   }
 
   .color5 {
     background-color: #98a329;
+
+    &:hover {
+      transform: rotate(-4deg);
+    }
   }
 
   .color6 {
     background-color: #77a329;
+
+    &:hover {
+      transform: rotate(14deg);
+    }
   }
 
   .color7 {
     background-color: #55a329;
+
+    &:hover {
+      transform: rotate(-10deg);
+    }
   }
 
   .color8 {
     background-color: #34a329;
+
+    &:hover {
+      transform: rotate(-3deg);
+    }
   }
 
   .color9 {
     background-color: #29a33f;
+
+    &:hover {
+      transform: rotate(-12deg);
+    }
   }
 
   .color10 {
     background-color: #29a360;
+
+    &:hover {
+      transform: rotate(-5deg);
+    }
   }
 
   .color11 {
     background-color: #29a382;
+
+    &:hover {
+      transform: rotate(-7deg);
+    }
   }
 
   .color12 {
     background-color: #29a3a3;
+
+    &:hover {
+      transform: rotate(-4deg);
+    }
   }
 
   .color13 {
     background-color: #2982a3;
+
+    &:hover {
+      transform: rotate(10deg);
+    }
   }
 
   .color14 {
     background-color: #2960a3;
+
+    &:hover {
+      transform: rotate(-7deg);
+    }
   }
 
   .color15 {
     background-color: #293fa3;
+
+    &:hover {
+      transform: rotate(11deg);
+    }
   }
 
   .color16 {
     background-color: #3429a3;
+
+    &:hover {
+      transform: rotate(-8deg);
+    }
   }
 
   .color17 {
     background-color: #5529a3;
+
+    &:hover {
+      transform: rotate(9deg);
+    }
   }
 
   .color18 {
     background-color: #7729a3;
+
+    &:hover {
+      transform: rotate(-8deg);
+    }
   }
 
   .color19 {
     background-color: #9829a3;
+
+    &:hover {
+      transform: rotate(-13deg);
+    }
   }
 
   .inline-box{
