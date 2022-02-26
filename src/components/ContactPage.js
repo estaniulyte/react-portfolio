@@ -112,36 +112,15 @@ const MySkillsPage = () => {
         <ParticleComponent theme='light' />
         <Main>
           <Title>
-            {/* <Design width={40} height={40} /> */}
             Say Hello
           </Title>
           <Description>
             If you have an offer or opportunity e-mail me at <NavLink target="_blank" to={{pathname:"mailto:e.staniulyte98@gmail.com"}}>e.staniulyte98@gmail.com</NavLink>
           </Description>
           <Description>
-            <a href="https://drive.google.com/uc?export=download&id=1REsCyViKq7lGWxbS2qE5iIvx2fkuSZ1D">Download CV</a>
+            <a href="https://drive.google.com/uc?export=download&id=1DO-kFeEkAE9VYF7vBqurF1csy_1wl-UV">Download CV</a>
           </Description>
         </Main>
-        {/* <Main>
-          <Title>
-            <Develope width={40} height={40} /> Frontend Developer
-          </Title>
-          <Description>
-            Learning Ract & Vue in leasure time
-          </Description>
-          <Description>
-            <strong>Skills</strong>
-            <p>
-              Html, Css, Js, React, Sass, Vue
-            </p>
-          </Description>
-          <Description>
-            <strong>Tools</strong>
-            <p>
-              VScode, Github etc.
-            </p>
-          </Description>
-        </Main> */}
         <BigTitle text="CONTACT" top="80%" right="30%" />
       </Box>
     </ThemeProvider>    
