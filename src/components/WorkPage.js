@@ -62,8 +62,10 @@ const Main =  styled.div`
     img {
       width: 60px;
       height: 60px;
+      padding-right: 20px;
 
       @media (max-width: 600px) {
+        padding-right: 5px;
         width: 45px;
         height: 45px;
       }
@@ -75,7 +77,7 @@ const Main =  styled.div`
     flex-direction: column;
     justify-content: center;
     padding: 5px;
-    padding-left: 20px;
+    padding-left: 0;
     margin: 5px;
     margin-left: 0;
   }
@@ -227,7 +229,7 @@ const WorkPage = () => {
                   <li>Testing that includes black box testing, automation running, UI/UX evaluation</li>
                   <li>Reportation of issues found back to development and project teams</li>
                   <li>Fulfillment of testing documents, creation of new documentation templates</li>
-                  <li>Tooling (Javascript, VueJS, Vuex, Vuetify, Axios, MySQL, NodeJS)</li>
+                  <li>Tools writing (Javascript, VueJS, Vuex, Vuetify, Axios, MySQL, NodeJS)</li>
               </ul>
             </div>
             <div className="inline">
