@@ -11,7 +11,7 @@ const Text = styled.h1`
   z-index: 0;
 
   @media (max-width: 900px) {
-    font-size: calc(4rem);
+    font-size: calc(2.8rem);
   }
 `
 
