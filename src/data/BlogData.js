@@ -7,7 +7,8 @@ export const Blogs = [
     tags:["FrontEnd","React","BEM","SCSS","CSS","HTML","JS"],
     date:"Website made with React. Project created during Sourcery academy for Front-End",
     imgSrc:"https://drive.google.com/uc?export=download&id=1uX7zQbl_bankoFn0KMRDCjeb0HlefweQ",
-    link:"https://estaniulyte.github.io/sourcery-academy-front-end/"
+    link:"https://estaniulyte.github.io/sourcery-academy-front-end/",
+    target: "_blank"
   },
   {
     id:2,
@@ -15,7 +16,8 @@ export const Blogs = [
     tags:["unity","mobile","game","design","illustrator"],
     date:"A mobile game made with Unity. All visuals are created using Illustrator.",
     imgSrc:"https://drive.google.com/uc?export=download&id=1ibdTDRG_FFCptfxPxj4lJIvWCdyI075d",
-    link:"https://play.google.com/store/apps/details?id=com.fluffycloud.cosmoscalligraphy"
+    link:"https://play.google.com/store/apps/details?id=com.fluffycloud.cosmoscalligraphy",
+    target: "_blank"
   },
   {
     id:3,
@@ -23,7 +25,8 @@ export const Blogs = [
     tags:["FrontEnd","ResponsiveDesign","React","BEM","SCSS","JS"],
     date:"Learning project. In progress.",
     imgSrc:"https://drive.google.com/uc?export=download&id=1zhb43SqMv5PHUsbI8i9vFxAsltS8WZGd",
-    link:"https://estaniulyte.github.io/coffee-shop/"
+    link:"https://estaniulyte.github.io/coffee-shop/",
+    target: "_blank"
   },
   {
     id:4,
@@ -31,7 +34,8 @@ export const Blogs = [
     tags:["Figma","UI/UX","Design","InVision", "Balsamiq"],
     date:"UI/UX process creating Job Searching application",
     imgSrc:"https://drive.google.com/uc?export=download&id=1SvPNWwYeeNusAMn-tQ99D7h96_vDJPrb",
-    link:"https://evelinastaniulyte722314.invisionapp.com/public/prototype/sks5o8fvp008gc601y2pdggyl/3cfe6a04"
+    link:"https://evelinastaniulyte722314.invisionapp.com/public/prototype/sks5o8fvp008gc601y2pdggyl/3cfe6a04",
+    target: "_blank"
   },
   {
     id:5,
@@ -39,7 +43,8 @@ export const Blogs = [
     tags:["Lightroom","Photoshop","Canon"],
     date:"",
     imgSrc:"https://drive.google.com/uc?export=download&id=1q3lsu_rfgSBpNsvOoMaGNrAYoo3bh2IV",
-    link:"https://www.instagram.com/ewastan__/"
+    link:"/photography",
+    target: ""
   },
   {
     id:6,
@@ -47,6 +52,7 @@ export const Blogs = [
     tags:["Illustrator","Photoshop"],
     date:"",
     imgSrc:"https://drive.google.com/uc?export=download&id=1T0l99lliYeoh02wN3rBw-JoYPLpXurLV",
-    link:"https://www.instagram.com/ehvehleena/"
+    link:"https://www.instagram.com/ehvehleena/",
+    target: "_blank"
   }
 ] 
