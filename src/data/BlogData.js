@@ -52,7 +52,6 @@ export const Blogs = [
     tags:["Illustrator","Photoshop"],
     date:"",
     imgSrc:"https://drive.google.com/uc?export=download&id=1T0l99lliYeoh02wN3rBw-JoYPLpXurLV",
-    link:"https://www.instagram.com/ehvehleena/",
-    target: "_blank"
+    link:"/graphic-design",
   }
 ] 

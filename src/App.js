@@ -10,6 +10,7 @@ import ProjectsPage from './components/ProjectsPage';
 import WorkPage from './components/WorkPage';
 import ContactPage from './components/ContactPage';
 import PhotographyPage from './components/PhotographyPage';
+import IllustrationsPage from './components/IllustrationsPage';
 import { AnimatePresence } from "framer-motion";
 import ScrollToTop from "./utils/ScrollToTop";
 
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/work" component={WorkPage}/>
           <Route exact path="/contact" component={ContactPage}/>
           <Route exact path="/photography" component={PhotographyPage}/>
+          <Route exact path="/graphic-design" component={IllustrationsPage}/>
         </Switch>
       </AnimatePresence>
     </ThemeProvider>
