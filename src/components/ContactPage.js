@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import { lightTheme } from './Themes';
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
-import ParticleComponent from '../subComponents/ParticleComponent';
+import ContactPageParticles from '../subComponents/ContactPageParticles';
 import BigTitle from '../subComponents/BigTitlte'
 import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
 
@@ -109,7 +109,8 @@ const MySkillsPage = () => {
       <Box>
         <LogoComponent theme='light'/>
         <SocialIcons theme='light'/>
-        <ParticleComponent theme='light' />
+        {/* <ParticleComponent theme='light' /> */}
+        <ContactPageParticles />
         <Main>
           <Title>
             Say Hello

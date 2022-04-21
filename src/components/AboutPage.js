@@ -3,9 +3,9 @@ import styled, { keyframes, ThemeProvider } from 'styled-components'
 import { DarkTheme } from './Themes';
 import LogoComponent from '../subComponents/LogoComponent';
 import SocialIcons from '../subComponents/SocialIcons';
-import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
 import astronaut from '../assets/Images/dev-female.png'
+import AboutParticleComponent from '../subComponents/AboutParticleComponent';
 
 const Box = styled.div`
   background-color: ${props => props.theme.body};
@@ -246,7 +246,7 @@ const AboutPage = () => {
       <Box>
         <LogoComponent theme='dark'/>
         <SocialIcons theme='dark'/>
-        <ParticleComponent theme='dark' />
+        <AboutParticleComponent />
         <Spaceman>
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
